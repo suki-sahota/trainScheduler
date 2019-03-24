@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+    <!-- Bootstrap CSS CDN  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Jumbotron for Title -->
+        <div class="jumbotron" style="background-color: #20315A ; color: white;">
+            <h1 class="text-center"><strong>Anytime is Train Time</strong></h1>
+            <p class="text-center">Choo Choo. Chee Chee.</p>
+        </div>
+
+        <!-- Row for Train Schedule -->
+        <div class="row">
+            <div class="col-sm-12">
+                <br>
+                <div class="card">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color: #20315A ; color: white;">
+                        <strong>Train Schedule</strong>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body border">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row for Adding Trains -->
+        <div class="row">
+            <div class="col-sm-12">
+                <br>
+                <div class="card">
+                    <!-- Card Header -->
+                    <div class="card-header" style="background-color: #20315A ; color: white;">
+                        <strong>Add Train</strong>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body border">
+                        <form role="form">
+
+                            <!-- Here we create the text box for capturing the train -->
+                            <div class="form-group">
+                                <label for="search">Train Name</label>
+                                <input type="text" class="form-control" id="train-name">
+                            </div>
+
+                            <!-- Here we capture the Destination -->
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <input type="text" class="form-control" id="destination">
+                            </div>
+
+                            <!-- Here we capture the First Train Time -->
+                            <div class="form-group">
+                                <label for="first-train">First Train Time (HH:mm - military time)</label>
+                                <input type="text" class="form-control" id="first-train">
+                            </div>
+
+                            <!-- Here we capture the Frequency -->
+                            <div class="form-group">
+                                <label for="freq">Frequency (min)</label>
+                                <input type="text" class="form-control" id="freq">
+                            </div>
+
+                            <!-- Here we have our final submit button -->
+                            <button type="submit" class="btn btn-default" id="submit" style="background-color: #20315A ; color: white;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- keys.js file -->
+    <script src="./keys.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Firebase App -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <!-- Firebase Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.0/firebase-database.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
