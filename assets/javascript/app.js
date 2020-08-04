@@ -1,12 +1,18 @@
 // INITIALIZE FIREBASE
 // __________________________________________________
 const config = {
-  apiKey: firebaseInfo.apiKey,
-  authDomain: firebaseInfo.authDomain,
-  databaseURL: firebaseInfo.databaseURL,
-  projectId: firebaseInfo.projectId,
-  storageBucket: firebaseInfo.storageBucket,
-  messagingSenderId: firebaseInfo.messagingSenderId
+//   apiKey: firebaseInfo.apiKey,
+//   authDomain: firebaseInfo.authDomain,
+//   databaseURL: firebaseInfo.databaseURL,
+//   projectId: firebaseInfo.projectId,
+//   storageBucket: firebaseInfo.storageBucket,
+//   messagingSenderId: firebaseInfo.messagingSenderId
+  apiKey: "AIzaSyDtNz5IETXj4XIsh-OAmuH6MzJ3OD9sLg4",
+  authDomain: "trainschedulersite.firebaseapp.com",
+  databaseURL: "https://trainschedulersite.firebaseio.com",
+  projectId: "trainschedulersite",
+  storageBucket: "",
+  messagingSenderId: "570170492047"
 };
 firebase.initializeApp(config);
 
